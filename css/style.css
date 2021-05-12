@@ -26,7 +26,7 @@ body {
   flex-wrap: wrap;
   margin: 3em auto;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .drawer {
@@ -78,7 +78,7 @@ article .info {
 }
 
 .name-date > * {
-  margin: .3em;
+  margin: 0.3em;
 }
 
 .name-date .join-date {
@@ -94,4 +94,26 @@ article .info {
   background-color: var(--clr-primary-vary-dark-garyish-blue);
   border-radius: 50%;
   padding: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 3em auto;
+    border-radius: 15px;
+  }
+
+  .drawer {
+    max-width: 50%;
+    max-height: 50%;
+    flex: 1;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+  }
+
+  .info {
+    border-top-right-radius: 15px;
+  }
 }
